@@ -1,7 +1,8 @@
 let get=null;
 function closure(){
     this.inc=0;
-    get=()=>this.inc;
+    get=console.log(this.inc)=>this.inc;
+    
     function increase(){
         this.inc++;
         console.log(this.inc);
